@@ -87,7 +87,7 @@ class Tides {
             timeZone = undefined;
           });
 
-          resolve(Object.values(tides).slice(0, 7));
+          resolve(Object.values(tides).slice(0, 7).sort((a, b) => a.date - b.date));
         });
     });
 

@@ -9,9 +9,8 @@ const out = false;
 describe('#forecast()', () => {
   it('responds with 7 days worth of data for \'Costa-de-Caparica\'', async () => {
     const forecast = await t.forecast('Costa-de-Caparica');
-
     if (out) {
-      console.log(forecast);
+      console.log('Response:\n\n', forecast, '\n\n');
     }
     forecast.length.should.be.aboveOrEqual(7);
     for (const el of forecast) {
