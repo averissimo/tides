@@ -76,9 +76,9 @@ class Tides {
               const startDay = today.startOf('day').unix();
 
               if (!tides[startDay]) {
-                tides[startDay] = {date: startDay, data: [], source: 'tide-forecast.com', type: 'tide'};
+                tides[startDay] = {date: startDay, data: [], source: 'tide-forecast.com'};
               }
-              tides[startDay].data.push({time: today, level, type});
+              tides[startDay].data.push({time: today.unix(), level, type});
             }
             type = undefined;
             level = undefined;
