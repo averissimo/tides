@@ -4,7 +4,7 @@ const {describe, it} = require('mocha');
 const {Tides} = require('.');
 
 const t = new Tides();
-const out = true;
+const out = false;
 
 describe('#forecast()', () => {
   it('responds with 7 days worth of data for \'Costa-de-Caparica\'', async () => {
