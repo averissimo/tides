@@ -1,6 +1,6 @@
 {
   "name": "tides-portugal",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Retrieve tide information",
   "main": "index.js",
   "scripts": {

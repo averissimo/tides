@@ -73,12 +73,12 @@ class Tides {
               }
             });
             if (type) {
-              const startDay = today.startOf('day').unix();
+              const startDay = today.startOf('day').unix() * 1000;
 
               if (!tides[startDay]) {
                 tides[startDay] = {date: startDay, data: [], source: 'tide-forecast.com'};
               }
-              tides[startDay].data.push({time: today.unix(), level, type});
+              tides[startDay].data.push({time: today.unix() * 1000, level, type});
             }
             type = undefined;
             level = undefined;
