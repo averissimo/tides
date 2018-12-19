@@ -34,7 +34,6 @@ class Tides {
 
           let firstDay;
 
-          console.log(table.length);
           table.each((i, el) => {
             $(el).find('td, th').each((j, el2) => {
               let className = $(el2).attr('class');
