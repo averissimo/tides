@@ -1,0 +1,39 @@
+{
+  "name": "tides",
+  "version": "0.1.0",
+  "description": "Retrieve tide information",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && nyc mocha",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+  },
+  "xo": {
+    "space": true
+  },
+  "jshintConfig": {
+    "esversion": 6
+  },
+  "homepage": "https://github.com/averissimo/tide",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/averissimo/tide"
+  },
+  "bugs": {
+    "url": "https://github.com/averissimo/tide/issues"
+  },
+  "author": "André Veríssimo",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.23",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "codecov": "^3.1.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "should": "^13.2.3",
+    "xo": "^0.23.0"
+  }
+}
