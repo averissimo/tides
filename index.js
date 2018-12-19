@@ -73,7 +73,7 @@ class Tides {
               }
             });
             if (type) {
-              const startDay = today.startOf('day').unix() * 1000;
+              const startDay = moment(today).startOf('day').unix() * 1000;
 
               if (!tides[startDay]) {
                 tides[startDay] = {date: startDay, data: [], source: 'tide-forecast.com'};
